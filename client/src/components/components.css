@@ -1,0 +1,34 @@
+.head-bar {
+  width: 100%;
+  height: 70px;
+  position: static;
+  display: flex;
+  justify-content: space-between;
+  background: #fafbfc;
+  padding: 1rem;
+  box-shadow: 0 3px 4px -6px #000;
+  z-index: 9;
+}
+nav.ui.menu {
+  margin-top: 0;
+}
+.main {
+  display: flex;
+  height: 100%;
+  position: relative;
+}
+.pies,
+.bars {
+  display: flex;
+  margin: 5rem 0 10rem;
+}
+.pies canvas {
+  max-width: 400px;
+}
+.driver-info {
+  display: flex;
+}
+.content-area {
+  flex: 0 0 80%;
+  padding: 2rem;
+}
