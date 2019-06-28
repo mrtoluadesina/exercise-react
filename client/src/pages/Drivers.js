@@ -5,19 +5,11 @@ import ContentArea from './contentArea';
 
 import DriverReport from '../components/DriverReport';
 
-const driverDetails = () => {
-  return (
-    <>
-      <DriverReport />
-    </>
-  );
-};
-
 export default function Drivers() {
   return (
     <>
       <Sidebar />
-      <ContentArea value={driverDetails()} />
+      <ContentArea value={<DriverReport />} />
     </>
   );
 }
