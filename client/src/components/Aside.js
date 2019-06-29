@@ -9,6 +9,7 @@ export default function Aside(props) {
   return (
     <div className="aside">
       <ul>
+        <li className="driver-item-title">All Drivers</li>
         {props.value.map(driver => (
           <li key={driver.id} className="driver-item">
             <NavLink
