@@ -25,7 +25,13 @@ export default function Aside(props) {
                   alt="driver"
                 />
               }
-              {driver.name}
+              <div className="driver-item-name">
+                <span>{driver.name}</span>
+                <span className="vehicle-num">
+                  {driver.vehicles.length}{' '}
+                  {driver.vehicles.length > 1 ? 'vehicles' : 'vehicle'}
+                </span>
+              </div>
             </NavLink>
           </li>
         ))}
