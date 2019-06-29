@@ -12,7 +12,13 @@
   background: #fff;
   box-shadow: 1px 0 5px -6px #000;
 }
-.aside ul li.driver-item {
+.aside ul li.driver-item-title {
+  text-align: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.aside ul li.driver-item,
+.aside ul li .driver-item-title {
   width: 100%;
   font-size: 1.5rem;
   list-style: none;
@@ -20,7 +26,7 @@
 .aside ul li .driver-link {
   display: flex;
   align-items: center;
-  padding: 2.5rem;
+  padding: 1rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .aside ul li .driver-link.active,
