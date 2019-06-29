@@ -15,7 +15,7 @@ const ContentArea = styled.div`
 const List = styled.li`
   display: flex;
   justify-content: space-between;
-  font-size: 2rem;
+  font-size: 1.7rem;
   line-height: 3rem;
   padding-bottom: 1rem;
   margin-bottom: 2rem;
@@ -43,6 +43,7 @@ export default function Driver() {
             {data.driver ? (
               <>
                 <div className="half">
+                  <span className="tag">DRIVER PROFILE</span>
                   <img
                     className="avatar"
                     src={data.driver.gender === 'male' ? male : female}
@@ -78,7 +79,8 @@ export default function Driver() {
                       </List>
                     </ul>
                   </div>
-                  <div className="half-half">
+                  <div className="half-half no-mb">
+                    <span className="tag">VEHICLES</span>
                     <ul>
                       {data.driver.vehicles.map((vehicle, index) => (
                         <List>
