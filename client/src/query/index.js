@@ -60,6 +60,9 @@ export const ALLDRIVERS = gql`
       id
       name
       gender
+      vehicles {
+        id
+      }
     }
   }
 `;
