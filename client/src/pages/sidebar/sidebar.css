@@ -40,3 +40,11 @@
   width: 50px;
   padding-right: 1rem;
 }
+.aside ul li div.driver-item-name {
+  display: flex;
+  flex-direction: column;
+}
+.aside ul li .vehicle-num {
+  font-size: 0.96rem;
+  line-height: 1.7rem;
+}
