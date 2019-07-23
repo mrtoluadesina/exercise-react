@@ -10,6 +10,7 @@ import styled from 'styled-components';
 const ContentArea = styled.div`
   display: flex;
   flex: 0 0 80%;
+  margin-left: 20%;
 `;
 
 const List = styled.li`
@@ -27,8 +28,11 @@ const Section = styled.section`
   padding: 10%;
 `;
 
-export default function Driver() {
-  const driverID = window.location.pathname.replace('/driver/', '');
+export default function Driver(props) {
+  const driverID =
+    window.location.pathname === '/driver'
+      ? props.default.id
+      : window.location.pathname.replace('/driver/', '');
   return (
     <Query
       query={GET_DRIVER_DETAILS}
@@ -83,7 +87,7 @@ export default function Driver() {
                     <span className="tag">VEHICLES</span>
                     <ul>
                       {data.driver.vehicles.map((vehicle, index) => (
-                        <List>
+                        <List key={index}>
                           <span>{index + 1}</span>{' '}
                           <span>{vehicle.manufacturer}</span>{' '}
                           <span>{vehicle.plate}</span>

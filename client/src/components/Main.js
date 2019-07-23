@@ -10,10 +10,9 @@ export default function Main() {
   return (
     <main className="main">
       <Route path="/" exact component={Dashboard} />
-      <Route path="/drivers" component={Drivers} />
       <Route path="/trips" component={Trips} />
       <Route path="/trip/:id" component={Trip} />
-      <Route path="/driver/:id" component={Drivers} />
+      <Route path="/driver" component={Drivers} />
     </main>
   );
 }

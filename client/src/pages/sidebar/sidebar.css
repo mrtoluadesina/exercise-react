@@ -8,6 +8,7 @@
 .aside {
   flex: 0 0 20%;
   height: 100%;
+  position: fixed;
   overflow-y: auto;
   background: #fff;
   box-shadow: 1px 0 5px -6px #000;

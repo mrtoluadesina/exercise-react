@@ -17,7 +17,7 @@ export default function DriverReport() {
           ) : (
             <>
               <Aside value={data.drivers} />
-              <Driver />
+              <Driver default={data.drivers[0]} />
             </>
           )
         }

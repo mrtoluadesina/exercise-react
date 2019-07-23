@@ -24,9 +24,13 @@ nav.ui.menu {
 }
 .pies {
   flex-direction: column;
+  flex: 0 0 30%;
 }
 .pies div {
   margin-top: 2rem;
+}
+.bars {
+  flex: 0 0 70%;
 }
 .driver-info {
   display: flex;

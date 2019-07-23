@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-const navs = ['Dashboard', 'Drivers', 'Trips'];
+const navs = ['dashboard', 'driver', 'trips'];
 
 export default function Navigation() {
   return (
