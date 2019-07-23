@@ -1,0 +1,51 @@
+.sidebar {
+  flex: 0 0 5%;
+  height: 100%;
+  overflow-y: auto;
+  background: #fff;
+  box-shadow: 8px 0 8px -8px #000;
+}
+.aside {
+  flex: 0 0 20%;
+  height: 100%;
+  position: fixed;
+  overflow-y: auto;
+  background: #fff;
+  box-shadow: 1px 0 5px -6px #000;
+}
+.aside ul li.driver-item-title {
+  text-align: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.aside ul li.driver-item,
+.aside ul li .driver-item-title {
+  width: 100%;
+  font-size: 1.5rem;
+  list-style: none;
+}
+.aside ul li .driver-link {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.aside ul li .driver-link.active,
+.aside ul li .driver-link:hover {
+  border-left: 3px solid #4183c4;
+}
+.aside ul li .driver-link.active {
+  background: #eef1f3;
+}
+.aside ul li img.driver-img {
+  width: 50px;
+  padding-right: 1rem;
+}
+.aside ul li div.driver-item-name {
+  display: flex;
+  flex-direction: column;
+}
+.aside ul li .vehicle-num {
+  font-size: 0.96rem;
+  line-height: 1.7rem;
+}
